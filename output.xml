@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.0 on win32)" generated="2026-03-19T20:57:18.805726" rpa="false" schemaversion="5">
+<suite id="s1" name="Ejemplo" source="D:\Escuela\Pruebas de software\New folder\ejemplo.robot">
+<test id="s1-t1" name="TC_001_Login_Con_Credenciales_Validas" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-19T20:57:19.061318" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-19T20:57:19.061072" elapsed="2.327709"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-03-19T20:57:21.389510" level="INFO">Typing text 'usuario_invalido' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>usuario_invalido</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-19T20:57:21.389163" elapsed="0.128136"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-03-19T20:57:21.518206" level="INFO">Typing password into text field 'name=password'.</msg>
+<msg time="2026-03-19T20:57:21.552995" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>name=password</arg>
+<arg>clave_invalida</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-19T20:57:21.517895" elapsed="0.092983"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-03-19T20:57:21.611477" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-19T20:57:21.611273" elapsed="0.072564"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-03-19T20:57:21.695453" level="INFO">Current page contains text 'Epic sadface: Username and password do not match'.</msg>
+<arg>Epic sadface: Username and password do not match</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-03-19T20:57:21.684304" elapsed="0.011281"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-19T20:57:21.695973" elapsed="2.157000"/>
+</kw>
+<status status="PASS" start="2026-03-19T20:57:19.060186" elapsed="4.793073"/>
+</test>
+<test id="s1-t2" name="TC_002_Login_Con_Credenciales_Invalidas" line="18">
+<status status="FAIL" start="2026-03-19T20:57:23.853623" elapsed="0.000333">Test cannot be empty.</status>
+</test>
+<status status="FAIL" start="2026-03-19T20:57:18.807291" elapsed="5.047073"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Ejemplo" id="s1" pass="1" fail="1" skip="0">Ejemplo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
